@@ -1,0 +1,76 @@
+title: Pocket Coach
+title_separator: "|"
+subtitle: "Achieve your fitness goals with Pocket Coach"
+email: DeeJayApplications@gmail.com
+description: >-
+  Download Pocket Coach today to experience an all in one fitness tracker
+  and coach. Achieve results in your fitness journey for free and with ease with the
+  help Pocket Coach today.
+baseurl: ""
+url: ""
+github_username: thed24
+repository: thed24/fitness-tracker-site
+
+# Build settings
+include: ["_pages"]
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+plugins:
+  - jekyll-include-cache
+
+author:
+  name   : "First Lastname"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
