@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Support',
+  description: 'Get help with your account, billing, and more.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Content tagline="Support" title="Contact Our Support Team">
+    <Fragment slot="content">
+      <p class="text-lg text-center">
+        Have questions or experiencing issues? Our dedicated support team is
+        ready to assist you with any problems related to Workout Quest and
+        our other apps from DJ Applications <br></br>
+        <a href="mailto:support@workoutquestapp.com" class="mx-auto btn btn-primary mt-4 mb-8 md:mb-0 text-center w-full md:w-auto">Email Support Here</a>
+      </p>
+    </Fragment>
+  </Content>
+</Layout>

@@ -1,0 +1,169 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Gamified Workout Tracker App - Workout Quest',
+  ignoreTitleTemplate: true,
+  description:
+    'Workout Quest is a gamified workout tracker app that helps you stay motivated and achieve your fitness goals.',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  canonical: 'https://workoutquestapp.com/',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Android Play Store',
+        href: 'https://play.google.com/store/apps/details?id=fitness.tracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      {
+        variant: 'primary',
+        text: 'iOS App Store',
+        href: 'https://apps.apple.com/us/app/workout-quest-fitness-tracker/id6452191825?ign-itscg=30200&ign-itsct=apps_box_badge',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+    image={{ src: '~/assets/images/hero.png', alt: 'Workout Quest Hero' }}
+  >
+    <Fragment slot="title">
+      Level-Up Your Home and Gym Workouts With <span class="text-accent dark:text-blue-400 highlight"
+        >Workout Quest</span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      An app that motivates you to work out and achieve your goals, with a fun, gamified approach to fitness. Earn
+      achievements and titles, gain experience, and level up each muscle as you progress in your fitness journey.
+
+      <span class="block mt-4 text-sm text-gray-500 dark:text-gray-400">
+        Download the app for free on iOS and Android today and start your fitness journey!
+      </span>
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="Key Features of Workout Quest"
+    items={[
+      {
+        title: 'Extensive Workout Library',
+        description: 'Access a wide range of workouts, complete with clear GIF demonstrations for each exercise.',
+        icon: 'tabler:bookmarks',
+      },
+      {
+        title: 'AI-Powered Personalization',
+        description: 'Get customized workout plans tailored to your fitness history, goals and available equipment.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Connect and Compete',
+        description: 'Join your friends, share your progress, and take on challenges with friends.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Quick and Easy Workout Tracking',
+        description:
+          'Track your progress efficiently with easy access to previous workouts and estimated 1 rep maxes on the fly.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Achievement System',
+        description: 'Unlock rewards and celebrate milestones as you progress in your fitness journey.',
+        icon: 'tabler:medal',
+      },
+      {
+        title: 'Comprehensive Insights',
+        description: 'Stay on-top of your training by utilizing our graphs and streak calendar to track your progress.',
+        icon: 'tabler:database',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    tagline="Your Journey, Your Rules"
+    title="Revolutionize Your Workout Routine with Workout Quest"
+    image={{
+      src: '~/assets/images/ss-profile.png',
+      alt: 'Workout Quest Home Workouts Screen',
+    }}
+    items={[
+      {
+        title: 'Adaptable Home & Gym Workouts',
+        description:
+          'A dynamic workout platform that adapts to your environment, whether you’re at home or in the gym, Workout Quest helps find and select the exercises that are right for you.',
+      },
+      {
+        title: 'Innovative AI-Driven Customization',
+        description:
+          'Our cutting-edge AI system creates personalized workout plans, considering your fitness level, goals, and available equipment, ensuring a tailored fitness experience.',
+      },
+      {
+        title: 'Community and Competition',
+        description:
+          'Engage with a community of fitness enthusiasts. Challenge friends, share achievements, and foster a competitive yet supportive environment to reach your goals.',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Empower Your Fitness Journey</h3>
+       Elevate your workouts with our unique blend of technology and community support. From home-based exercises to gym
+      routines, our app guides you every step of the way.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Stats
+    stats={[
+      { title: 'Workouts Completed', amount: '1000+' },
+      { title: 'Active Users', amount: '200+' },
+      { title: 'Achievements Earned', amount: '50+' },
+    ]}
+  />
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Join On Android',
+        href: 'https://play.google.com/store/apps/details?id=fitness.tracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      {
+        variant: 'primary',
+        text: 'Join On iOS',
+        href: 'https://apps.apple.com/us/app/workout-quest-fitness-tracker/id6452191825?ign-itscg=30200&ign-itsct=apps_box_badge',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Join the <span class="sm:whitespace-nowrap">Fitness Revolution</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Don't just work out, embark on a quest! Transform your workouts into a thrilling journey with Workout Quest.
+    </Fragment>
+  </CallToAction>
+</Layout>
