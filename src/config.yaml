@@ -32,7 +32,7 @@ i18n:
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 6
+    postsPerPage: 5
 
     post:
       isEnabled: true
@@ -56,7 +56,7 @@ apps:
       isEnabled: true
       pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
-        index: false
+        index: true
 
 analytics:
   vendors:
