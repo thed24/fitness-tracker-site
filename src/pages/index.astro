@@ -6,6 +6,7 @@ import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Images from '~/components/widgets/Images.astro';
 
 const metadata = {
   title: 'Gamified Workout Tracker App - Workout Quest',
@@ -38,10 +39,9 @@ const metadata = {
         icon: 'tabler:download',
       },
     ]}
-    image={{ src: '~/assets/images/hero.webp', alt: 'Workout Quest Hero' }}
   >
     <Fragment slot="title">
-      Level-Up Your Home and Gym Workouts With <span class="text-accent dark:text-blue-400 highlight"
+      Level-Up Your Home and Gym Training With <span class="text-accent dark:text-blue-400 highlight"
         >Workout Quest</span
       >
     </Fragment>
@@ -100,7 +100,7 @@ const metadata = {
     tagline="Your Journey, Your Rules"
     title="Revolutionize Your Workout Routine with Workout Quest"
     image={{
-      src: '~/assets/images/ss-profile.png',
+      src: '~/assets/images/ss-building.png',
       alt: 'Workout Quest Home Workouts Screen',
     }}
     items={[
