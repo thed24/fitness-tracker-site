@@ -12,6 +12,10 @@
     "format": "prettier -w .",
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
+  "resolutions": {
+    "astro/sharp": "0.33.1",
+    "astro-compress/sharp": "0.33.1"
+  },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
