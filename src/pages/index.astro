@@ -6,13 +6,13 @@ import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Images from '~/components/widgets/Images.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Gamified Workout Tracker App - Workout Quest',
   ignoreTitleTemplate: true,
   description:
-    'Workout Quest is a gamified workout tracker app that helps you stay motivated and achieve your fitness goals.',
+    'Track your exercises, earn achievements and level up as you train, at home or at the gym, with Workout Quest. Download the app for free on iOS and Android!',
   robots: {
     index: true,
     follow: true,
@@ -123,7 +123,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Empower Your Fitness Journey</h3>
-       Elevate your workouts with our unique blend of technology and community support. From home-based exercises to gym
+       Gamify your workouts with our unique blend of technology and community support. From home-based exercises to gym
       routines, our app guides you every step of the way.
     </Fragment>
 
@@ -138,6 +138,44 @@ const metadata = {
       { title: 'Active Users', amount: '200+' },
       { title: 'Achievements Earned', amount: '50+' },
       { title: 'Friends Added', amount: '40+' },
+    ]}
+  />
+
+  <FAQs
+    id="faqs"
+    tagline="FAQs"
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'How does Workout Quest work?',
+        description: 'Workout Quest gamifies your fitness and exercise experience by making it simple and fun to track your workouts: At it\'s core, it allows you to track your workout as you train (or schedule it ahead of time) by picking exercises from a large database and entering information about your reps, sets and weights. When completing workouts, you gain experience, level up, earn achievements and are provided with insights to help you stay on track.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        title: 'What makes Workout Quest unique in tracking workouts?',
+        description: 'Unlike traditional fitness apps, Workout Quest introduces a gamified approach to keeping fit. With features like AI-powered personalization, an extensive workout library, and a community-driven platform, it transforms routine exercises into a more engaging and motivating experience. By tracking your progress, you unlock achievements, level up, and visualize your fitness journey with comprehensive progress analysis, making every workout session an adventure.',
+        icon: 'tabler:star',
+      },
+      {
+        title: 'Can Workout Quest help me create a personalized fitness plan?',
+        description: 'Absolutely! Workout Quest premium leverages AI to offer personalized workout plans tailored to your fitness level, goals, and available equipment. By analyzing your performance data and preferences, it suggests workouts that are most effective for you, ensuring you\'re on the right path whether you\'re engaging in home workouts or hitting the gym. This smart customization helps in achieving better results by adapting to your evolving fitness needs.',
+        icon: 'tabler:adjustments',
+      },
+      {
+        title: 'How does the achievement system motivate Workout Quest users?',
+        description: 'Workout Quest’s achievement system is designed to boost motivation by recognizing your hard work and progress. As you complete workouts, hit new personal records, and stick to your fitness regimen, you earn achievements, badges, and levels. This rewarding system not only celebrates your milestones but also encourages a healthy competition and accountability within the Workout Quest community, making fitness more fun and engaging.',
+        icon: 'tabler:trophy',
+      },
+      {
+        title: 'Is Workout Quest suitable for beginners?',
+        description: 'Yes, Workout Quest is perfectly suited for beginners as well as seasoned fitness enthusiasts. With its extensive database of exercises complete with GIF demonstrations, beginners can easily find and learn new workouts. Additionally, you can filter the list of exercises by muscle-group and equipment required to focus on what you personally need. Certain exercises are also tagged as "hot" if they are used by a majority of users, so you can easily find popular exercises to get started with.',
+        icon: 'tabler:user-plus',
+      },
+      {
+        title: 'How does Workout Quest support community and social features?',
+        description: 'Workout Quest goes beyond just tracking workouts by offering a rich community and social experience. You can connect with friends, share your progress, and challenge each other in fitness quests. The app promotes a supportive and motivational environment where users can celebrate achievements together, compare progress, and even participate in community challenges. This social connectivity makes working out more enjoyable and keeps you motivated through shared experiences.',
+        icon: 'tabler:users',
+      }
     ]}
   />
 
@@ -164,7 +202,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Don't just work out, embark on a quest! Transform your workouts into a thrilling journey with Workout Quest.
+      Don't just work out, embark on a quest! Transform your workouts into a thrilling journey with Workout Quest, the gamified workout tracker.
     </Fragment>
   </CallToAction>
 </Layout>
