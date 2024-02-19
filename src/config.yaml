@@ -8,8 +8,8 @@ site:
 metadata:
   title:
     default: Workout Quest
-    template: '%s — Workout Quest'
-  description: "Gamify your exercise with the best gamified workout tracker app. Track your progress, earn achievements and level-up on iOS and Android. Start your fitness journey today!"
+    template: 'Workout Quest: %s'
+  description: "Track your exercises, earn achievements and level up as you train, at home or at the gym, with Workout Quest. Download the app for free on iOS and Android!"
   robots:
     index: true
     follow: true

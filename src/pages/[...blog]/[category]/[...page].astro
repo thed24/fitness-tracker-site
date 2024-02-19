@@ -21,6 +21,7 @@ const currentPage = page.currentPage ?? 1;
 
 const metadata = {
   title: `Category '${category}' ${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  description: `All blog posts in the category '${category}'.`,
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,

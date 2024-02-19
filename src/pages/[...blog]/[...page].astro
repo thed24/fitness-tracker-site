@@ -24,7 +24,8 @@ const currentPage = page.currentPage ?? 1;
 // const allTags = await findTags(['HIIT', 'Yoga', 'Weightlifting']);
 
 const metadata = {
-  title: `Workout Quest Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `Blog${currentPage > 1 ? ` Page ${currentPage}` : ''}`,
+  description: 'Explore our latest news, workout tips, nutrition advice, and success stories',
   robots: {
     index: blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,
