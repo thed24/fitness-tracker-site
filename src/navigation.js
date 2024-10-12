@@ -14,6 +14,10 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink(),
     },
+    {
+      text: 'Discord',
+      href: 'https://discord.gg/Rpw8Aza2Kj',
+    }
   ],
   actions: [],
 };
