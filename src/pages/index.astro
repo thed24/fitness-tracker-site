@@ -21,39 +21,40 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Android Play Store',
-        href: 'https://play.google.com/store/apps/details?id=fitness.tracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      {
-        variant: 'primary',
-        text: 'iOS App Store',
-        href: 'https://apps.apple.com/au/app/workout-quest-fitness-tracker/id6452191825?ign-itscg=30200&ign-itsct=apps_box_badge',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Level-Up Your Home and Gym Training With <span class="text-accent dark:text-blue-400 highlight"
-        >Workout Quest</span
-      >
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      An app that motivates you to work out and achieve your goals, with a fun, gamified approach to fitness. Earn
-      achievements and titles, gain experience, and level up each muscle as you progress in your fitness journey.
-
-      <span class="block mt-4 text-sm text-gray-500 dark:text-gray-400">
-        Download the app for free on iOS and Android today and start your fitness journey!
-      </span>
-    </Fragment>
-  </Hero>
+  <section class="relative bg-black h-screen">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="absolute inset-0 object-cover w-full opacity-40 min-h-full" id="hero-video">
+      <source src="/public/Workout Quest.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Overlay Content -->
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <div class="text-center text-white max-w-md mx-auto">
+        <h1 class="text-5xl font-bold">Level Up Your Fitness Journey</h1>
+        <p class="mt-4 text-lg">Track your workouts, level-up, and compete with friends for <strong>free</strong> in Workout Quest</p>
+  
+        <!-- App Store Buttons -->
+        <div class="mt-8 flex justify-center space-x-4">
+          <a
+            href="https://play.google.com/store/apps/details?id=fitness.tracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            target="_blank"
+            class="px-6 py-3 bg-primary rounded-lg text-white flex items-center space-x-2">
+            <span>Android Play Store</span>
+            <icon name="tabler:download"></icon>
+          </a>
+  
+          <a
+            href="https://apps.apple.com/au/app/workout-quest-fitness-tracker/id6452191825?ign-itscg=30200&ign-itsct=apps_box_badge"
+            target="_blank"
+            class="px-6 py-3 bg-primary rounded-lg text-white flex items-center space-x-2">
+            <span>iOS App Store</span>
+            <icon name="tabler:download"></icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  
 
   <Features
     id="features"
