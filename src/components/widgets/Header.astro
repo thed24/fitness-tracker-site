@@ -45,7 +45,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-opacity ease-linear",
+    "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-linear",
   ]}
   {...isSticky ? { "data-aw-sticky-header":  true } : {}}
   {...id ? { id } : {}}
@@ -53,7 +53,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
   <div class="absolute inset-0"></div>
   <div
     class:list={[
-      "relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex ",
+      "relative text-default py-2 px-2 md:px-6 mx-auto w-full md:flex ",
       {
         "max-w-7xl": !isFullWidth,
       },
